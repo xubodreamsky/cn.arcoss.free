@@ -26,22 +26,18 @@
                         </div>
                         <div class="form-group">
                             <label>类别</label>
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    --请选择--
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                    <li><a href="#">男士披肩</a></li>
-                                    <li><a href="#">男士寸衫</a></li>
-                                    <li><a href="#">男士短袖</a></li>
-                                    <li><a href="#">男士裤子</a></li>
-                                </ul>
-                            </div>
+                            <select class="selectpicker">
+                                <option>男士披肩</option>
+                                <option>男士寸衫</option>
+                                <option>男士短袖</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label>品牌</label>
-                            <textarea name="content" id="newFormContent" class="form-control" rows="10" required="required"></textarea>
+                            <select class="selectpicker">
+                                <option>Dior</option>
+                                <option>CK</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label>市场价</label>
@@ -53,11 +49,11 @@
                         </div>
                         <div class="form-group">
                             <label>上传图片</label>
-                            <textarea name="content" id="newFormContent" class="form-control" rows="10" required="required"></textarea>
+
                         </div>
                         <div class="form-group">
                             <label>库存</label>
-                            <textarea name="content" id="newFormContent" class="form-control" rows="10" required="required"></textarea>
+                            <input type="number" id="number" class="info-box-number"/>
                         </div>
                         <div class="form-group">
                             <label>推荐</label>
@@ -81,7 +77,6 @@
                         </div>
                         <button type="submit" class="btn btn-lg btn-success col-lg-12">添加</button>
                     </form>
-
                 </div>
             </div>
         </div>
